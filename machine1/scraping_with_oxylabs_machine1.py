@@ -110,7 +110,7 @@ while one_time_max < end:
                 req_num += 1
         rdf = pd.DataFrame(result_list)
         rdf = rdf.groupby(by=['구분', '제조사', '대표차명', '모델명', '연식', '세부차종'], as_index=False).sum()
-        rdf.to_excel(f'result_machine1_{req_num}.xlsx', index=False)
+        rdf.to_excel(f'RESULTS/result_machine1_{req_num}.xlsx', index=False)
         result_list.clear()
         req_num = one_time_max + 1
         one_time_max += 50
