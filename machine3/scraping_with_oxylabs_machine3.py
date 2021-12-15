@@ -122,6 +122,7 @@ while one_time_max < end:
         logging.exception("The proxy is not working")
 
 print("machine3 has run sucessfully")
+# Print total execution time
 stop = timeit.default_timer()
 print('Total executed time=',stop - start)
 logging.exception("Total executed time = ", stop - start)

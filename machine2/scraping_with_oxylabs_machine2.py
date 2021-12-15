@@ -123,5 +123,6 @@ while one_time_max < end:
 
 print("machine2 has run sucessfully")
 stop = timeit.default_timer()
+# Print total execution time
 print('Total executed time=',stop - start)
 logging.exception("Total executed time= ", stop - start)
