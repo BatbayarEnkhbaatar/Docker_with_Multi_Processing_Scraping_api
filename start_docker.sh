@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo docker build -t machine-1 machine1/ & sudo docker build -t machine-2 machine2/ & sudo docker build -t machine-3 machine3/
+sudo docker run --interactive -v /Users/spider/job/projects/for_test/test_Oxy_lab/multi_process/Dist/machine1:/machine machine-1 & sudo docker run --interactive -v /Users/spider/job/projects/for_test/test_Oxy_lab/multi_process/Dist/machine2:/machine machine-2 &sudo docker run --interactive -v /Users/spider/job/projects/for_test/test_Oxy_lab/multi_process/Dist/machine3:/machine machine-3
